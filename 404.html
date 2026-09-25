@@ -19,20 +19,15 @@
     font-family:'Segoe UI', system-ui, -apple-system, sans-serif;
     background: radial-gradient(circle at 30% 20%, var(--bg2), var(--bg) 70%);
     color:var(--text);
-    display:flex; align-items:center; justify-content:center;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
     min-height:100%;
-    padding: max(24px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom));
+    padding: max(20px, env(safe-area-inset-top)) 24px max(48px, env(safe-area-inset-bottom));
     text-align:center;
     overflow-x:hidden;
   }
-  .wrap{ max-width:640px; width:100%; }
-
-  .logo{
-    max-width:640px; max-height:320px; width:auto; height:auto;
-    object-fit:contain;
-    margin:0 auto 36px;
-    display:block;
-  }
+  .wrap{ max-width:640px; width:100%; margin:auto; }
 
   .gear{
     width:120px; height:120px; margin:0 auto 32px;
@@ -85,8 +80,6 @@
 <body>
   <div class="wrap">
 
-    <img class="logo" src="images/logo.png" alt="Logo">
-
     <svg class="gear" viewBox="0 0 100 100" aria-hidden="true">
       <circle cx="50" cy="50" r="42"/>
       <circle cx="50" cy="50" r="30" stroke-dasharray="6 6"/>
@@ -107,8 +100,12 @@
     </div>
 
     <footer>
-      <strong>Equipo de diseño web - TechSolutions Cuba</strong>. 
+      <strong>Equipo de diseño web - TechSolutions Cuba</strong>.
+    </footer>
     <div class="bar-label">Vuelva pronto</div>
+  </div>
+</body>
+</html>s="bar-label">Vuelva pronto</div>
     </footer>
   </div>
 </body>
